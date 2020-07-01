@@ -1,0 +1,21 @@
+<h1>Listado de Novedades</h1>
+
+<table id="novedades" border=1>
+    <tr>
+        <th>Creador</th>
+        <th>Novedad</th>
+    </tr>
+    {{#each listado}}
+        <tr>
+            <td>
+                {{this.creador}}
+            </td>
+            <td>
+                {{this.novedad}}
+            </td> 
+        </tr>
+    {{/each}}
+</table>
+
+<a href="/alta_novedad"><button>Crear novedad</button></a>
+
